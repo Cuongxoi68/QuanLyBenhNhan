@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5645616C-3624-4018-BBE6-DD336C6E21A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyBenhNhan</RootNamespace>
+    <AssemblyName>QuanLyBenhNhan</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>E:\_Getintopc.com_Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\Guna\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\WindowsAPICodePack-Core.1.1.2\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\New folder\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\frmThemManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmThemManager.Designer.cs">
+      <DependentUpon>frmThemManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmUpdateManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmUpdateManager.Designer.cs">
+      <DependentUpon>frmUpdateManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmThemPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmThemPhong.Designer.cs">
+      <DependentUpon>frmThemPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmUpdatePhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmUpdatePhong.Designer.cs">
+      <DependentUpon>frmUpdatePhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\frmCapNhatHoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\frmCapNhatHoSo.Designer.cs">
+      <DependentUpon>frmCapNhatHoSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\frmCapNhatUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\frmCapNhatUser.Designer.cs">
+      <DependentUpon>frmCapNhatUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\frmThemHoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\frmThemHoSo.Designer.cs">
+      <DependentUpon>frmThemHoSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\frmThemUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\frmThemUser.Designer.cs">
+      <DependentUpon>frmThemUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\frmManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\frmManager.Designer.cs">
+      <DependentUpon>frmManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="User\frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XuLyDuLieu.cs" />
+    <EmbeddedResource Include="Admin\frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmThemManager.resx">
+      <DependentUpon>frmThemManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmThemPhong.resx">
+      <DependentUpon>frmThemPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmUpdateManager.resx">
+      <DependentUpon>frmUpdateManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmUpdatePhong.resx">
+      <DependentUpon>frmUpdatePhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\frmCapNhatHoSo.resx">
+      <DependentUpon>frmCapNhatHoSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\frmCapNhatUser.resx">
+      <DependentUpon>frmCapNhatUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\frmManager.resx">
+      <DependentUpon>frmManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\frmThemHoSo.resx">
+      <DependentUpon>frmThemHoSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\frmThemUser.resx">
+      <DependentUpon>frmThemUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Img\backgn\10.4.2.jpg" />
+    <None Include="Img\backgn\15844987044471282625698.jpg.crdownload" />
+    <None Include="Img\backgn\codong.jpg" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataBase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataBase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DataBase.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\NenDangNhap.jpg" />
+    <None Include="Img\Icon\virus.png" />
+    <None Include="Img\backgn\codong1.jpg" />
+    <None Include="Img\backgn\codong2.jpg" />
+    <None Include="Img\backgn\codong3.jpg" />
+    <None Include="Img\backgn\codong4.jpg" />
+    <None Include="Img\backgn\codong5.jpg" />
+    <Content Include="Img\backgn\loginBr.jpg" />
+    <None Include="Img\backgn\NenDangNhap1.jpg" />
+    <None Include="Img\Icon\admin.png" />
+    <Content Include="Img\Icon\coronaimage.png" />
+    <None Include="Img\Icon\delete.png" />
+    <Content Include="Img\Icon\doctor.png" />
+    <None Include="Img\Icon\doctor1.png" />
+    <Content Include="Img\Icon\doctor_briefcase_red.ico" />
+    <None Include="Img\Icon\folder.png" />
+    <Content Include="Img\Icon\FormQly.ico" />
+    <None Include="Img\Icon\key.png" />
+    <Content Include="Img\Icon\logout.png" />
+    <Content Include="Img\Icon\mainicon.svg" />
+    <None Include="Img\Icon\manager.png" />
+    <Content Include="Img\Icon\outIcon.png" />
+    <Content Include="Img\Icon\outImg.png" />
+    <None Include="Img\Icon\reload.png" />
+    <None Include="Img\Icon\room.png" />
+    <None Include="Img\Icon\plus.png" />
+    <None Include="Img\Icon\updated.png" />
+    <None Include="Img\Icon\room1.png" />
+    <None Include="Img\Icon\sos.png" />
+    <Content Include="Img\Icon\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
